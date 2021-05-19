@@ -1,27 +1,82 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 .App {
+ 
+  display: grid;
   text-align: center;
+  grid-template-rows: 7% 40% 30% 30% 30% 30% 30% 50%;
+  grid-template-areas: "menu-bar" "App-header" "iPad" "iMac"  "wrapper" "wrapper1" "wrapper2" "info";  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #EFE5FE;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+.App-header h3{
+  
+  margin-top: 6px;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing:.004em ;
+  }
+
+.app-header a{
+font-size: 21px;
+margin-top: 25px;
+font-weight: 400px;
+letter-spacing: .011em;
+color: #0066CC;
+
+}
+
+.iPad{
+background: #000;
+color: #ffff;
+padding-top: 46px;
+height: 650px;
+}
+
+.iMac{
+background: #fff;
+color: black;
+
+}
+ a {
+  display : block ;
+  color: #0066CC;
+  padding: 16px;
+  }
+.consul{
+margin-top: 16px;
+color : #7A7A7E;
+
+}
+ h2{
+  padding-top: 47px;
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing:-.005em ;
+
+}
+
+h3{
+  margin-top: 6px;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing:.004em ;
+
 }
 
 .App-link {
@@ -36,3 +91,170 @@
     transform: rotate(360deg);
   }
 }
+
+.menu-bar  {
+
+background-color:black;
+color: #fff;
+height: 60px;
+display: fixed;
+top: 0;
+
+}
+/*
+.menu-bar ul{
+display ;
+}
+*/
+.menu-bar ul li {
+display: inline-block;
+font-size: 14px;
+padding:0 30px;
+
+}
+.apple{
+
+  padding-top: 10px;
+}
+.wrapper{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+align-content: stretch;
+padding: 10px;
+
+}
+.iPhone12{
+  flex-basis: 49.6%;
+  background: black;
+  color: #fff;
+
+}
+.Watch{
+  flex-basis: 49.6%;
+  background: black;
+  color: #fff;
+}
+
+h4{
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 53px;
+
+
+}
+h5{
+font-size: 21px;
+font-weight: 400;
+margin-top: 4px;
+
+}
+h6{
+
+  font-size: 35px;
+  margin-top:  40px;
+
+   display: inline-block;
+
+}
+
+p{
+  color: #BD1C26;
+}
+.imagenapple{
+
+  margin-top: 10px;
+  display: inline-block;
+  
+}
+ .imagenapple img{
+
+  padding-top: 20px;
+ }
+
+ .dis{
+color: #86868B;
+
+ }
+ .AirTag{
+  flex-basis: 49.6%;
+  background: #FBFBFD;
+  color: black;
+ }
+ .Arcade{
+  flex-basis: 49.6%;
+  background: #FBFBFD;
+  color: black;
+
+ }
+ .links a{
+
+  display:inline-block ;
+ }
+
+ .One{
+
+ flex-basis: 49.6%;
+ background:#FBFBFD ;
+ }
+
+ .info1{
+  width: 300px;
+  margin: auto;
+
+ }
+ .TV{
+background: url("https://firebasestorage.googleapis.com/v0/b/trabajoreact-f23c5.appspot.com/o/logos%2Fimagen.PNG?alt=media&token=a2a4105d-4bdd-43bd-be35-d60738510552") center no-repeat;
+background-size: cover;
+flex-basis: 49.6%;
+ }
+
+ footer{
+  background : #F5F5F7;
+  
+  min-height: 100ph;
+ }
+
+ .info{
+   margin: 0 250px; 
+   color: #86868B;
+   font-size: 12px;
+   text-align: justify; 
+   padding: 10px;
+   
+ }
+ .listas{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  margin: 0 150px;
+  
+
+ }
+ .Descubrir{
+ flex-basis: 25% ;
+ font-size: 12px;
+ color : black; 
+ }
+ .Servicios{
+  flex-basis: 25% ;
+  font-size: 12px;
+  color : black;
+ }
+ .Empresa{
+  flex-basis: 25% ;
+  font-size: 12px;
+  color : black;
+ }
+ .Valores{
+  flex-basis: 25% ;
+  font-size: 12px;
+  color: black;
+ }
+ .listas  a {
+  color : #86868B;
+ }
+ .listas h6{
+   font-size: 13px;
+ }
